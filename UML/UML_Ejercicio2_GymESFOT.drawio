@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2026-11-15T20:20:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="diagram_1" name="Ejercicio 2 - GymESFOT">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_gim" value="Gimnasio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="360" height="218" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_gim" value="- miembros : HashMap&amp;lt;String, Miembro&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_gim">
+          <mxGeometry y="28" width="360" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_gim" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_gim">
+          <mxGeometry y="56" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_gim" value="+ Gimnasio()&lt;br&gt;+ existeCedula(cedula: String) : boolean&lt;br&gt;+ registrarMiembro(miembro: Miembro) : boolean&lt;br&gt;+ buscar(cedula: String) : Miembro&lt;br&gt;+ buscar(nombre: String, apellido: String) : Miembro&lt;br&gt;+ estaVacio() : boolean&lt;br&gt;+ getMiembros() : Collection&amp;lt;Miembro&amp;gt;&lt;br&gt;+ mostrarEstadisticas() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_gim">
+          <mxGeometry y="64" width="360" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_mie" value="Miembro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="510" y="30" width="450" height="308" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mie" value="- cedula : String&lt;br&gt;- nombre : String&lt;br&gt;- apellido : String&lt;br&gt;- cuotaBase : double&lt;br&gt;- asistencias : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mie">
+          <mxGeometry y="28" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_mie" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_mie">
+          <mxGeometry y="128" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_mie" value="+ Miembro(cedula: String, nombre: String, apellido: String, cuotaBase: double)&lt;br&gt;+ getCedula() : String&lt;br&gt;+ getNombre() : String&lt;br&gt;+ getApellido() : String&lt;br&gt;+ getCuotaBase() : double&lt;br&gt;+ getAsistencias() : int&lt;br&gt;+ registrarAsistencia() : void&lt;br&gt;+ calcularCuota() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mie">
+          <mxGeometry y="136" width="450" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_mbas" value="MiembroBasico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="390" width="420" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mbas" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mbas">
+          <mxGeometry y="28" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_mbas" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_mbas">
+          <mxGeometry y="54" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_mbas" value="+ MiembroBasico(cedula: String, nombre: String, apellido: String, cuotaBase: double)&lt;br&gt;+ calcularCuota() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mbas">
+          <mxGeometry y="62" width="420" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_mpre" value="MiembroPremium" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="730" y="390" width="420" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_mpre" value="- sesionesEntrenador : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mpre">
+          <mxGeometry y="28" width="420" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_mpre" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_mpre">
+          <mxGeometry y="56" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_mpre" value="+ MiembroPremium(cedula: String, nombre: String, apellido: String, cuotaBase: double, sesionesEntrenador: int)&lt;br&gt;+ getSesionesEntrenador() : int&lt;br&gt;+ calcularCuota() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_mpre">
+          <mxGeometry y="64" width="420" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="agg_gim" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=diamondThin;startFill=0;startSize=12;endArrow=open;endFill=0;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_gim" target="cls_mie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="agg_gim_m1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="agg_gim">
+          <mxGeometry x="-0.75" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="agg_gim_m2" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="agg_gim">
+          <mxGeometry x="0.75" y="-12" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="inh_mbas" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_mbas" target="cls_mie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inh_mpre" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_mpre" target="cls_mie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
